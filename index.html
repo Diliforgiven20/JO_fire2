@@ -203,23 +203,13 @@
 
         /* --- MOBILE ENHANCEMENTS (PC version is 100% untouched) --- */
         @media (max-width: 768px) {
-            /* 1. Portfolio Cards: Text permanently visible on mobile (since there is no hover) */
-            .portfolio-card .absolute.inset-0 {
-                opacity: 1 !important;
-                background: linear-gradient(to top, rgba(3, 11, 20, 0.95) 0%, rgba(3, 11, 20, 0.5) 50%, transparent 100%) !important;
-            }
-            .portfolio-card .translate-y-4, 
-            .portfolio-card .translate-y-2 {
-                transform: translateY(0) !important;
-            }
-            
-            /* 2. Glass Cards: Extra depth on mobile */
+            /* 1. Glass Cards: Extra depth on mobile */
             .glass-card {
                 box-shadow: 0 10px 25px -5px rgba(0, 212, 255, 0.15);
                 border-color: rgba(255, 255, 255, 0.08);
             }
             
-            /* 3. Mobile Menu: Premium rounded aesthetic */
+            /* 2. Mobile Menu: Premium rounded aesthetic */
             #mobile-menu {
                 border-bottom-left-radius: 1.5rem;
                 border-bottom-right-radius: 1.5rem;
