@@ -246,6 +246,11 @@
             #home {
                 padding-top: 6rem !important;
             }
+
+            /* 6. Hide hover text/overlay on Logo section for mobile only */
+            .gallery-section[data-category="logos"] .portfolio-card .absolute.inset-0 {
+                display: none !important;
+            }
         }
     </style>
 </head>
@@ -1360,9 +1365,8 @@
             renderer.setSize(window.innerWidth, window.innerHeight);
         });
 
-        window.onload = function() {
-            animate();
-        };
+        // Start the animation immediately (Do not wait for large images to load)
+        animate();
     </script>
 </body>
 </html>
